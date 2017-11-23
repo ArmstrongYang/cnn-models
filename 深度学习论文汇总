@@ -1,0 +1,84 @@
+【更新于9.23】深度学习论文汇总
+原创 2017年04月07日 19:51:34 标签：深度学习 4013
+本博客用于记录自己平时收集的一些不错的深度学习论文，近9成的文章都是引用量3位数以上的论文，剩下少部分来自个人喜好，本博客将伴随着我的研究生涯长期更新，如有错误或者推荐文章烦请私信。
+
+深度学习书籍和入门资源
+
+LeCun Y, Bengio Y, Hinton G. Deep learning[J]. Nature, 2015, 521(7553): 436-444. [PDF]（深度学习最权威的综述）
+Bengio, Yoshua, Ian J. Goodfellow, and Aaron Courville. Deep learning. An MIT Press book. (2015).[PDF]（深度学习经典书籍）
+Deep Learning Tutorial[PDF]（李宏毅的深度学习综述PPT，适合入门）
+D L. LISA Lab[J]. University of Montreal, 2014.[PDF]（Theano配套的深度学习教程）
+deeplearningbook-chinese [Github]（深度学习中文书，大家一起翻译的）
+-
+早期的深度学习
+
+Hecht-Nielsen R. Theory of the backpropagation neural network[J]. Neural Networks, 1988, 1(Supplement-1): 445-448.[PDF]（BP神经网络）
+Hinton G E, Osindero S, Teh Y W. A fast learning algorithm for deep belief nets.[J]. Neural Computation, 2006, 18(7):1527-1554.[PDF]（深度学习的开端DBN）
+Hinton G E, Salakhutdinov R R. Reducing the dimensionality of data with neural networks.[J]. Science, 2006, 313(5786):504-7.[PDF]（自编码器降维）
+Ng A. Sparse autoencoder[J]. CS294A Lecture notes, 2011, 72(2011): 1-19.[PDF]（稀疏自编码器）
+Vincent P, Larochelle H, Lajoie I, et al. Stacked denoising autoencoders: Learning useful representations in a deep network with a local denoising criterion[J]. Journal of Machine Learning Research, 2010, 11(Dec): 3371-3408.[PDF]（堆叠自编码器，SAE）
+深度学习的爆发:ImageNet挑战赛
+
+Krizhevsky, Alex, Ilya Sutskever, and Geoffrey E. Hinton. Imagenet classification with deep convolutional neural networks. Advances in neural information processing systems. 2012.[PDF]（AlexNet）
+Simonyan, Karen, and Andrew Zisserman. Very deep convolutional networks for large-scale image recognition. arXiv preprint arXiv:1409.1556 (2014).[PDF]（VGGNet）
+Szegedy, Christian, et al. Going deeper with convolutions. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2015. [PDF]（GoogLeNet）
+Szegedy C, Vanhoucke V, Ioffe S, et al. Rethinking the Inception Architecture for Computer Vision[J]. Computer Science, 2015:2818-2826.[PDF]（InceptionV3）
+He, Kaiming, et al. Deep residual learning for image recognition. arXiv preprint arXiv:1512.03385 (2015).[PDF]（ResNet）
+Huang G, Liu Z, Weinberger K Q, et al. Densely Connected Convolutional Networks[J]. 2016. [PDF] (DenseNet, 2017 CVPR best paper)
+Squeeze-and-Excitation Networks. [PDF] (SeNet, 2017 ImageNet 冠军)
+炼丹技巧
+
+Srivastava N, Hinton G E, Krizhevsky A, et al. Dropout: a simple way to prevent neural networks from overfitting[J]. Journal of Machine Learning Research, 2014, 15(1): 1929-1958.[PDF]（Dropout）
+Ioffe S, Szegedy C. Batch normalization: Accelerating deep network training by reducing internal covariate shift[J]. arXiv preprint arXiv:1502.03167, 2015.[PDF]（Batch Normalization）
+Lin M, Chen Q, Yan S. Network In Network[J]. Computer Science, 2014.[PDF]（Global average pooling的灵感来源）
+Goyal, Priya, Dollár, Piotr, Girshick, Ross, et al. Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour[J]. 2017. [PDF]（Facebook实验室的成果，解决了工程上网络batchsize特大时性能下降的问题）
+递归神经网络
+
+Mikolov T, Karafiát M, Burget L, et al. Recurrent neural network based language model[C]//Interspeech. 2010, 2: 3.[PDF]（RNN和语language model结合较经典文章）
+Kamijo K, Tanigawa T. Stock price pattern recognition-a recurrent neural network approach[C]//Neural Networks, 1990., 1990 IJCNN International Joint Conference on. IEEE, 1990: 215-221.[PDF]（RNN预测股价）
+Hochreiter S, Schmidhuber J. Long short-term memory[J]. Neural computation, 1997, 9(8): 1735-1780.[PDF]（LSTM的数学原理）
+Sak H, Senior A W, Beaufays F. Long short-term memory recurrent neural network architectures for large scale acoustic modeling[C]//Interspeech. 2014: 338-342.[PDF]（LSTM进行语音识别）
+Chung J, Gulcehre C, Cho K H, et al. Empirical evaluation of gated recurrent neural networks on sequence modeling[J]. arXiv preprint arXiv:1412.3555, 2014.[PDF]（GRU网络）
+Ling W, Luís T, Marujo L, et al. Finding function in form: Compositional character models for open vocabulary word representation[J]. arXiv preprint arXiv:1508.02096, 2015.[PDF]（LSTM在词向量中的应用）
+Huang Z, Xu W, Yu K. Bidirectional LSTM-CRF models for sequence tagging[J]. arXiv preprint arXiv:1508.01991, 2015.[PDF]（Bi-LSTM在序列标注中的应用）
+注意力模型
+
+Bahdanau D, Cho K, Bengio Y. Neural machine translation by jointly learning to align and translate[J]. arXiv preprint arXiv:1409.0473, 2014.[PDF]（Attention model的提出）
+Mnih V, Heess N, Graves A. Recurrent models of visual attention[C]//Advances in neural information processing systems. 2014: 2204-2212.[PDF]（Attention model和视觉结合）
+Xu K, Ba J, Kiros R, et al. Show, Attend and Tell: Neural Image Caption Generation with Visual Attention[C]//ICML. 2015, 14: 77-81.[PDF]（Attention model用于image caption的经典文章）
+Lee C Y, Osindero S. Recursive Recurrent Nets with Attention Modeling for OCR in the Wild[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016: 2231-2239.[PDF]（Attention model 用于OCR）
+Gregor K, Danihelka I, Graves A, et al. DRAW: A recurrent neural network for image generation[J]. arXiv preprint arXiv:1502.04623, 2015.[PDF]（DRAM，结合Attention model的图像生成）
+生成对抗网络
+
+Goodfellow I, Pouget-Abadie J, Mirza M, et al. Generative adversarial nets[C]//Advances in neural information processing systems. 2014: 2672-2680.[PDF]（GAN的提出，挖坑鼻祖）
+Mirza M, Osindero S. Conditional generative adversarial nets[J]. arXiv preprint arXiv:1411.1784, 2014.[PDF]（CGAN）
+Radford A, Metz L, Chintala S. Unsupervised representation learning with deep convolutional generative adversarial networks[J]. arXiv preprint arXiv:1511.06434, 2015.[PDF]（DCGAN）
+Denton E L, Chintala S, Fergus R. Deep Generative Image Models using a Laplacian Pyramid of Adversarial Networks[C]//Advances in neural information processing systems. 2015: 1486-1494.[PDF]（LAPGAN）
+Chen X, Duan Y, Houthooft R, et al. Infogan: Interpretable representation learning by information maximizing generative adversarial nets[C]//Advances in Neural Information Processing Systems. 2016: 2172-2180.[PDF]（InfoGAN）
+Arjovsky M, Chintala S, Bottou L. Wasserstein gan[J]. arXiv preprint arXiv:1701.07875, 2017.[PDF]（WGAN）
+目标检测
+
+Szegedy C, Toshev A, Erhan D. Deep neural networks for object detection[C]//Advances in Neural Information Processing Systems. 2013: 2553-2561.[PDF]（深度学习早期的物体检测）
+Girshick, Ross, et al. Rich feature hierarchies for accurate object detection and semantic segmentation. Proceedings of the IEEE conference on computer vision and pattern recognition. 2014.[PDF]（RCNN）
+He K, Zhang X, Ren S, et al. Spatial pyramid pooling in deep convolutional networks for visual recognition[C]//European Conference on Computer Vision. Springer International Publishing, 2014: 346-361.[PDF]（何凯明大神的SPPNet）
+Girshick R. Fast r-cnn[C]//Proceedings of the IEEE International Conference on Computer Vision. 2015: 1440-1448.[PDF]（速度更快的Fast R-cnn）
+Ren S, He K, Girshick R, et al. Faster r-cnn: Towards real-time object detection with region proposal networks[C]//Advances in neural information processing systems. 2015: 91-99.[PDF]（速度更更快的Faster r-cnn）
+Redmon J, Divvala S, Girshick R, et al. You only look once: Unified, real-time object detection[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016: 779-788.[PDF]（实时目标检测YOLO）
+Liu W, Anguelov D, Erhan D, et al. SSD: Single shot multibox detector[C]//European Conference on Computer Vision. Springer International Publishing, 2016: 21-37.[PDF]（SSD）
+Li Y, He K, Sun J. R-fcn: Object detection via region-based fully convolutional networks[C]//Advances in Neural Information Processing Systems. 2016: 379-387.[PDF]（R-fcn）
+He K, Gkioxari G, Dollár P, et al. Mask R-CNN[J]. arXiv preprint arXiv:1703.06870, 2017.[PDF]（何凯明大神的MASK r-cnn，膜）
+One/Zero shot learning
+
+Fei-Fei L, Fergus R, Perona P. One-shot learning of object categories[J]. IEEE transactions on pattern analysis and machine intelligence, 2006, 28(4): 594-611.[PDF]（One shot learning）
+Larochelle H, Erhan D, Bengio Y. Zero-data learning of new tasks[J]. 2008:646-651.[PDF]（Zero shot learning的提出）
+Palatucci M, Pomerleau D, Hinton G E, et al. Zero-shot learning with semantic output codes[C]//Advances in neural information processing systems. 2009: 1410-1418.[PDF]（Zero shot learning比较经典的应用）
+图像分割
+
+Long J, Shelhamer E, Darrell T. Fully convolutional networks for semantic segmentation[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2015: 3431-3440.[PDF]（有点老但是非常经典的图像语义分割论文，CVPR2015）
+Person Re-ID
+
+Yi D, Lei Z, Liao S, et al. Deep metric learning for person re-identification[C]//Pattern Recognition (ICPR), 2014 22nd International Conference on. IEEE, 2014: 34-39.[PDF]（较早的一篇基于CNN的度量学习的Re-ID，现在来看网络已经很简单了）
+Ding S, Lin L, Wang G, et al. Deep feature learning with relative distance comparison for person re-identification[J]. Pattern Recognition, 2015, 48(10): 2993-3003.[PDF]（triplet loss）
+Cheng D, Gong Y, Zhou S, et al. Person re-identification by multi-channel parts-based cnn with improved triplet loss function[C]//Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016: 1335-1344.[PDF]（improved triplet loss）
+Chen W, Chen X, Zhang J, et al. Beyond triplet loss: a deep quadruplet network for person re-identification[J]. arXiv preprint arXiv:1704.01719, 2017.[PDF]（四元组）
+Liang Zheng的个人主页（在这个领域提供了大量论文，常用的数据集和代码都可以在主页中找到）
